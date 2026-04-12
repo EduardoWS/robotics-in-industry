@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Revolução da Robótica na Indústria 4.0</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css" id="theme">
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        .reveal {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #050510;
+            background-image: radial-gradient(circle at center, #0B1021 0%, #030508 100%);
+        }
+        .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+            font-family: 'Orbitron', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #E2E8F0;
+        }
+        .reveal h1 {
+            font-weight: 900;
+            letter-spacing: 4px;
+            text-shadow: 0px 4px 20px rgba(0, 195, 255, 0.4);
+            color: #FFFFFF;
+        }
+        .reveal h2 {
+            color: #00E5FF;
+            text-shadow: 0px 2px 10px rgba(0, 229, 255, 0.2);
+            margin-bottom: 30px;
+        }
+        .reveal h3 {
+            color: #94A3B8;
+            font-size: 1.3em;
+            margin-bottom: 40px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        .reveal p, .reveal li {
+            font-weight: 400;
+            color: #CBD5E1;
+            line-height: 1.6;
+        }
+        .reveal ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .reveal ul li {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 15px;
+        }
+        .reveal ul li::before {
+            content: '▹';
+            color: #00E5FF;
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+            top: -2px;
+        }
+        .highlight {
+            color: #FFFFFF;
+            font-weight: 700;
+            border-bottom: 2px solid #00E5FF;
+        }
+        .highlight-red {
+            color: #FF5A5F;
+            font-weight: 700;
+            border-bottom: 2px solid #FF5A5F;
+        }
+        .highlight-green {
+            color: #00D084;
+            font-weight: 700;
+            border-bottom: 2px solid #00D084;
+        }
+        .highlight-yellow {
+            color: #FBBF24;
+            font-weight: 700;
+            border-bottom: 2px solid #FBBF24;
+        }
+        
+        .box {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 20px 30px;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 20px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 42.1875%; /* 16:9 de 75% */
+            height: 0;
+            overflow: hidden;
+            width: 75%;
+            margin: 0 auto 30px auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+            border: 1px solid rgba(0, 229, 255, 0.3);
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100% !important;
+            height: 100% !important;
+            max-width: none !important;
+            max-height: none !important;
+        }
+        .image-slide {
+            max-height: 400px;
+            max-width: 80%;
+            display: inline-block !important;
+            margin: 0 auto 20px auto !important;
+            object-fit: cover;
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .image-caption {
+            font-style: italic;
+            font-size: 0.7em !important;
+            color: #94A3B8;
+            margin-top: 15px;
+        }
+        .author-info {
+            font-size: 0.6em;
+            color: #64748B;
+            letter-spacing: 1px;
+            margin-top: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Capa -->
+            <section data-transition="zoom" data-background-image="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" data-background-opacity="0.2">
+                <h1>Robótica Avançada</h1>
+                <h3>Na Indústria 4.0</h3>
+                <div class="box" style="display:inline-block; padding: 15px 30px;">
+                    <p style="margin: 0;">Conectando Mentes e Máquinas</p>
+                </div>
+                <br>
+                <div class="author-info">
+                    Eduardo Ribeiro Rodrigues - 13696679<br>
+                    Bruno [SOBRENOME] - [NUSP]
+                </div>
+            </section>
+
+            <!-- Histórico -->
+            <section data-transition="slide" data-background-image="https://images.unsplash.com/photo-1563770660941-20978e870e26?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" data-background-opacity="0.1">
+                <h2 style="margin-bottom: 15px;">Da 1.0 à 4.0</h2>
+                <div class="box fragment fade-up" style="padding: 30px 20px; margin-bottom: 12px;">
+                    <p style="margin: 0; font-size: 0.95em;"><span class="highlight">Indústria 1.0 & 2.0:</span> Mecanização e Produção em Massa.</p>
+                </div>
+                <div class="box fragment fade-up" style="padding: 30px 20px; margin-bottom: 12px;">
+                    <p style="margin: 0; font-size: 0.95em;"><span class="highlight">Indústria 3.0:</span> Automação clássica (Robôs em gaiolas).</p>
+                </div>
+                <div class="box fragment fade-up" style="padding: 30px 20px; margin-bottom: 12px;">
+                    <p style="margin: 0; font-size: 0.95em;"><span class="highlight">Indústria 4.0:</span> Sistemas Ciberfísicos (CPS), IoT e IA.</p>
+                </div>
+                <p class="fragment fade-in" style="margin-top: 40px; margin-bottom: 40px; font-size: 0.85em; font-style: italic; color: #00E5FF;">"O maquinário deixou de ser apenas força motriz."</p>
+            </section>
+
+            <!-- Pilares -->
+            <section data-transition="slide">
+                <h2>Pilares da Robótica 4.0</h2>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+                    <div class="box fragment fade-right" style="padding: 15px 20px; margin-bottom: 0;">
+                        <h4 style="color:#FFF; font-size: 0.9em; margin-bottom: 40px;">Sistemas Ciberfísicos</h4>
+                        <p style="font-size: 0.6em; margin: 0;">O físico e o digital indissociáveis.</p>
+                    </div>
+                    <div class="box fragment fade-left" style="padding: 15px 20px; margin-bottom: 0;">
+                        <h4 style="color:#FFF; font-size: 0.9em; margin-bottom: 40px;">IoT (Internet das Coisas)</h4>
+                        <p style="font-size: 0.6em; margin: 0;">Comunicação máquina a máquina.</p>
+                    </div>
+                    <div class="box fragment fade-right" style="padding: 15px 20px; margin-bottom: 0;">
+                        <h4 style="color:#FFF; font-size: 0.9em; margin-bottom: 40px;">Inteligência Artificial</h4>
+                        <p style="font-size: 0.6em; margin: 0;">Percepção contextual e decisão autônoma.</p>
+                    </div>
+                    <div class="box fragment fade-left" style="padding: 15px 20px; margin-bottom: 0;">
+                        <h4 style="color:#FFF; font-size: 0.9em; margin-bottom: 40px;">Edge <br> Computing</h4>
+                        <p style="font-size: 0.6em; margin: 0;">Processamento no próprio robô.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Petróleo e Gás Offshore - Desafios -->
+            <section data-transition="slide" data-background-image="https://images.unsplash.com/photo-1542456485-de2af43a0544?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" data-background-opacity="0.1">
+                <h2>Petróleo e Gás Offshore</h2>
+                <h3>O Cenário Anterior</h3>
+                <div class="box" style="border-left: 4px solid #FF5A5F;">
+                    <p><span class="highlight-red">Desafios Antes:</span></p>
+                    <p style="font-size: 0.9em;">Dependência de "supermergulhadores" humanos em atividades de altíssimo risco e altos custos com navios de suporte e cabos umbilicais.</p>
+                </div>
+            </section>
+
+            <!-- Petróleo e Gás Offshore - Solução -->
+            <section data-transition="fade">
+                <h2>Petróleo e Gás Offshore</h2>
+                <h3>A Solução Robótica</h3>
+                <div class="box" style="border-left: 4px solid #00D084;">
+                    <p><span class="highlight-green">O que Traz a Robótica:</span></p>
+                    <p style="font-size: 0.9em;">Robôs submarinos (FlatFish) inspecionam até 3.000m autonomamente. Robôs com pernas (ANYmal X) navegam em plataformas cheias de escadas para ler anomalias.</p>
+                </div>
+            </section>
+
+            <!-- Petróleo e Gás Offshore - Desafios Futuros -->
+            <section data-transition="slide">
+                <h2>Petróleo e Gás Offshore</h2>
+                <h3>O Que Ainda Falta</h3>
+                <div class="box" style="border-left: 4px solid #FBBF24;">
+                    <p><span class="highlight-yellow">Desafios que Faltam:</span></p>
+                    <p style="font-size: 0.9em;">Comunicação de alta velocidade embaixo d'água (wi-fi submarino) e resistência a longo prazo contra a extrema corrosão do oceano.</p>
+                </div>
+            </section>
+
+            <!-- Imagem Robô ANYmal -->
+            <section data-transition="convex">
+                <h2>O Robô ANYmal X</h2>
+                <img class="image-slide" src="./images/robot_operation.png" alt="ANYmal Robot">
+            </section>
+
+            <section data-transition="convex">
+                <h2>O Robô ANYmal X</h2>
+                <img class="image-slide" src="./images/robot_operation2.png" alt="ANYmal Robot">
+            </section>
+
+            <section data-transition="convex">
+                <h2>O Robô ANYmal X</h2>
+                <img class="image-slide" src="./images/robot_operation3.png" alt="ANYmal Robot">
+            </section>
+
+            <!-- Vídeo 1 (ANYmal) -->
+            <section data-transition="zoom" data-background-color="#050510">
+                <h2 style="font-size: 1.5em; margin-bottom: 20px;">ANYmal X em Ação</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube-nocookie.com/embed/CVjjNRA9Fno" title="ANYmal X Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- Vídeo 2 (CNN Petrobras) -->
+            <section data-transition="zoom" data-background-color="#050510">
+                <h2 style="font-size: 1.5em; margin-bottom: 20px;">Fim dos Supermergulhadores</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube-nocookie.com/embed/JGjUezf0aUI" title="CNN Petrobras" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- Agro 4.0 - Desafios -->
+            <section data-transition="slide" data-background-image="https://images.unsplash.com/photo-1592982537447-7440770cbfc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" data-background-opacity="0.1">
+                <h2>Setor: Agro 4.0</h2>
+                <h3>O Cenário Anterior</h3>
+                <div class="box" style="border-left: 4px solid #FF5A5F;">
+                    <p><span class="highlight-red">Desafios Antes:</span></p>
+                    <p style="font-size: 0.9em;">Tratores gigantescos que causavam "amassamento" das plantações e pulverização generalizada que desperdiçava agrotóxicos e poluía o solo.</p>
+                </div>
+            </section>
+
+            <!-- Agro 4.0 - Solução -->
+            <section data-transition="fade">
+                <h2>Setor: Agro 4.0</h2>
+                <h3>A Solução Robótica</h3>
+                <div class="box" style="border-left: 4px solid #00D084;">
+                    <p><span class="highlight-green">O que Traz a Robótica:</span></p>
+                    <p style="font-size: 0.9em;">Drones escaneiam o estresse da planta e tratores autônomos aplicam herbicida exclusivamente nas ervas daninhas (redução de 95% de químicos).</p>
+                </div>
+            </section>
+
+            <!-- Agro 4.0 - Desafios Futuros -->
+            <section data-transition="slide">
+                <h2>Setor: Agro 4.0</h2>
+                <h3>O Que Ainda Falta</h3>
+                <div class="box" style="border-left: 4px solid #FBBF24;">
+                    <p><span class="highlight-yellow">Desafios que Faltam:</span></p>
+                    <p style="font-size: 0.9em;">O "Apagão Conectivo" nas áreas rurais (falta de 4G/5G). Os robôs dependem de Edge Computing, o que encarece as máquinas.</p>
+                </div>
+            </section>
+
+            <!-- Imagem Drone Agro -->
+            <section data-transition="convex">
+                <h2>Robótica Agrícola</h2>
+                <img class="image-slide" src="./images/drone.jpg" alt="Drone Agrícola">
+                <p class="image-caption">Drone aplicando fertilizante de forma inteligente.</p>
+            </section>
+
+            <!-- Vídeo 3 (John Deere) -->
+            <section data-transition="zoom" data-background-color="#050510">
+                <h2 style="font-size: 1.5em; margin-bottom: 20px;">John Deere - Trator Autônomo</h2>
+                <div class="video-container">
+                    <iframe src="https://www.youtube-nocookie.com/embed/8B1JhpeNuDw" title="John Deere Brasil Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </section>
+
+            <!-- Automotiva - Desafios -->
+            <section data-transition="slide" data-background-image="https://images.unsplash.com/photo-1610491462702-42e6ecd4f8df?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" data-background-opacity="0.1">
+                <h2>Indústria Automotiva</h2>
+                <h3>O Cenário Anterior</h3>
+             <div class="box" style="border-left: 4px solid #FF5A5F;">
+                    <p><span class="highlight-red">Desafios Antes:</span></p>
+                    <p style="font-size: 0.9em;">Montagem manual ou maquinário inflexível: lentidão, erros de precisão e dificuldade em alterar modelos de produção.</p>
+                </div>
+            </section>
+
+            <!-- Automotiva - Solução -->
+            <section data-transition="fade">
+                <h2>Indústria Automotiva</h2>
+                <h3>A Solução Robótica</h3>
+                <div class="box" style="border-left: 4px solid #00D084;">
+                    <p><span class="highlight-green">O que Traz a Robótica:</span></p>
+                    <p style="font-size: 0.9em;">Cobots (robôs colaborativos) adaptam a montagem dinamicamente para fabricar modelos variados na mesma esteira, sem interrupções.</p>
+                </div>
+            </section>
+
+            <!-- Automotiva - Desafios Futuros -->
+            <section data-transition="slide">
+                <h2>Indústria Automotiva</h2>
+                <h3>O Que Ainda Falta</h3>
+                <div class="box" style="border-left: 4px solid #FBBF24;">
+                    <p><span class="highlight-yellow">Desafios que Faltam:</span></p>
+                    <p style="font-size: 0.9em;">Integrar maquinários legados na rede IoT e programar robôs para tarefas de acabamento sensíveis.</p>
+                </div>
+            </section>
+
+            <!-- Imagem Braços Robóticos -->
+            <section data-transition="convex">
+                <h2>Precisão Automobilística</h2>
+                <img class="image-slide" src="./images/kuka.jpg" alt="Braço Robótico Kuka">
+                <p class="image-caption">Braço robótico industrial KUKA em processo de montagem.</p>
+            </section>
+
+            <!-- Desafios Globais -->
+            <section data-transition="slide">
+                <h2>Desafios Globais</h2>
+                <ul>
+                    <li class="fragment fade-up"><span class="highlight">Apagão Conectivo:</span> Faltam redes de alta velocidade (5G) em áreas remotas.</li>
+                    <li class="fragment fade-up"><span class="highlight">Altos Custos:</span> Investimento inicial elevado, especialmente para PMEs.</li>
+                    <li class="fragment fade-up"><span class="highlight">Qualificação Humana:</span> Necessidade urgente de operadores qualificados em Dados e IA.</li>
+                </ul>
+            </section>
+
+            <!-- Conclusão -->
+            <section data-transition="zoom" data-background-image="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" data-background-opacity="0.3">
+                <h2 style="font-size: 2.5em; text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);">O Futuro</h2>
+                <div class="box" style="background: rgba(0,0,0,0.6); padding: 20px; margin-top: 30px;">
+                    <p style="font-size: 1em; font-style: italic;">"A robótica na Indústria 4.0 não se trata de substituir humanos, mas de criar um ecossistema colaborativo, altamente eficiente e seguro."</p>
+                </div>
+                <br>
+                <h3 class="fragment" style="color: #00E5FF;">Obrigado!</h3>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            transition: 'fade',
+            backgroundTransition: 'fade',
+            width: 1200, 
+            height: 700,
+            margin: 0.1,
+            minScale: 0.2,
+            maxScale: 2.0
+        });
+    </script>
+</body>
+</html>
